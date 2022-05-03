@@ -1,0 +1,12 @@
+.caja, .caja--borde, .estilo {
+  height: 100px;
+  width: 100px;
+  background-color: antiquewhite; }
+
+.caja--borde {
+  border: 1px solid black; }
+
+.estilo {
+  background-color: green;
+  font-size: 15px;
+  border-radius: 3px; }

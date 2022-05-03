@@ -1,0 +1,29 @@
+@mixin tamano($ancho, $alto) {
+    height: $alto;
+    width: $ancho;
+}
+
+.caja {
+    @include tamano(100px, 100px);
+    background-color: antiquewhite;
+}
+
+.caja--borde {
+    @extend .caja;
+    border: 1px solid black;
+}
+
+
+$decoracion: (
+    fondo: green,
+    tamaño: 15px,
+    border-radius: 3px
+);
+ 
+.estilo{
+    @extend .caja;
+    background-color: map-get($decoracion, fondo);
+    font-size: map-get($decoracion, tamaño );
+    border-radius: map-get($decoracion, border-radius );   
+
+}
